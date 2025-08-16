@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/myudb')
+mongoose.connect('mongodb+srv://root:root@cluster0.5scc5x8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log("MongoDB connected successfully"))
   .catch(e => console.error("MongoDB connection error:", e));
 
